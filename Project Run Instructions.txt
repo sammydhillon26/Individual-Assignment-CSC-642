@@ -1,0 +1,17 @@
+Step 1, Installation:
+	Install the following resources:
+	1. Angular Cli https://angular.io/cli
+	2. Node JS https://nodejs.org/en/download/
+	3. Install Yarn https://classic.yarnpkg.com/en/docs/install/
+	4. Install VS Code https://code.visualstudio.com/
+
+Step 2, To run project:
+	1. Go the project directory
+	2. Enter 'cmd' to the project address bar.
+	3. A cmd window will pop up with your current address of project.
+	4. Now type this command i.e. 'code .' (Make sure vs code is installed)
+	5. Now open terminal in vs code.
+	6. Write a command i.e. 'yarn install' in order to install required resources to run the project on your machine.
+	7. After yarn installation, type 'ng s' in order to run the project.
+	8. Now use a web browser and type 'http://localhost:4200/'.
+	9. Congratulations, project is up and running :)

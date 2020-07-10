@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="card m-3">
+        <h5 class="card-header" style="text-align: center; background-color: #007bff; color: white; font-weight: bold;">
+            {{title}}</h5>
+        <!-- <h5 class="card-header" style="text-align: center;"></h5> -->
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6 ">
+                        <h6>First Name:</h6>
+                        {{this.data.firstName}}
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Last Name:</h6>
+                        {{this.data.lastName}}
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Address:</h6>
+                        {{this.data.address}}
+                        <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                            <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+                        </agm-map>
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Zip Code:</h6>
+                        {{this.data.zipCode}}
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Date Of Birth:</h6>
+                        {{this.data.dateOfBirth |date:'dd/MM/yyyy'}}
+                    </div>
+                    
+                    <div class="form-group col-md-6 ">
+                        <h6>Education Level</h6>
+                        {{this.data.education}}
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Height:</h6>
+                        {{height}}
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Phone:</h6>
+                        {{this.data.phone}}
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <h6>Email:</h6>
+                        {{this.data.email}}
+                    </div>
+
+                </div>
+                <div class="float-right">
+                    <button class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
